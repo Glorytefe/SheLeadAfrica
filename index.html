@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <h1>Tefe</h1>
+        <!-- <span class="spanbrand">Brand</span> -->
+        <input type="checkbox" id="checkbx" class="checkbx" />
+        <label for="checkbx" class="togglebar"><span></span></label>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- content starts here -->
+      <div class="content">
+        <!-- home starts -->
+        <div class="home" id="home">
+          <div class="col">
+            <h2>Hello World!</h2>
+            <h2><span class="bord">I'M TEFE</span></h2>
+            <h2>Front-end Developer</h2>
+          </div>
+        </div>
+        <!-- home ends here -->
+        <!-- about starts -->
+        <div class="about" id="about">
+          <h2 class="headertext">About <span class="grn">Me</span></h2>
+          <img src="/img/IMG_710jm,yik4.jpg" alt="Tefe" class="myimg" />
+          <p>
+            I am <b>Tefe Mebuiefene</b>, a frontend developer based in Lagos. I
+            work with <b>Javascript, HTML5, CSS3 and Bootstrap</b> effectively.
+            I am a young tech enthusiast seeking a career in a growing
+            organization, where I can have the opportunities to prove my
+            abilities by accepting challenges as well as fulfilling the
+            organization’s goal and climb the career ladder through continuous
+            learning, hard work, determination, and commitment.
+          </p>
+        </div>
+        <!-- about ends -->
+        <!-- portfolio starts -->
+        <div class="portfolio" id="portfolio">
+          <h2
+            class="headertext"
+            style="text-align: center; padding-bottom: 35px"
+          >
+            My Portfolio
+          </h2>
+          <div class="grid-cont">
+            <!-- project1 -->
+            <div class="grid-item">
+              <img src="/img/crystal.png" alt="project" class="myimga" />
+              <div>
+                <b>CRYSTAL HOTEL</b>
+                <p>An elegant and stylish hotel that suites all your needs</p>
+                <p>Tools: Javascript, HTML, CSS, Bootstrap, animate.css</p>
+
+                <a
+                  href="https://crystal-hotel.netlify.app"
+                  target="_blank"
+                  class="btn"
+                  >View</a
+                >
+              </div>
+            </div>
+            <!-- project2 -->
+            <div class="grid-item">
+              <img src="/img/furniture.png" alt="project" class="myimga" />
+              <div>
+                <b>TEFE'S STORE</b>
+
+                <p>An online store for the best furnitures</p>
+                <p>Tools: Javascript, HTML, CSS, Bootstrap</p>
+
+                <a
+                  href="https://glo-store.netlify.app"
+                  target="_blank"
+                  class="btn"
+                  >View</a
+                >
+              </div>
+            </div>
+            <!-- project3 -->
+            <div class="grid-item">
+              <img src="/img/mylife.png" alt="project" class="myimga" />
+              <div>
+                <b>MyLife</b>
+                <p>MyLife gives you that platform to share life experiences</p>
+                <p>Tools: HTML, CSS, Bootstrap, animate.css and Javascript</p>
+                <a
+                  href="https://mylife-app.netlify.app/"
+                  target="_blank"
+                  class="btn"
+                  >View</a
+                >
+              </div>
+            </div>
+
+            <!-- project4 -->
+            <div class="grid-item">
+              <img src="/img/weather.png" alt="project" class="myimga" />
+              <div>
+                <b>Weather App</b>
+
+                <p>An online app for weather forecast</p>
+                <p>Tools: HTML,CSS and Javascript</p>
+
+                <a
+                  href="https://weather-app-glo.netlify.app"
+                  target="_blank"
+                  class="btn"
+                  >View</a
+                >
+              </div>
+            </div>
+            <!-- project5 -->
+            <div class="grid-item">
+              <img src="/img/bkshop.png" alt="project" class="myimga" />
+              <div>
+                <b>BookStore</b>
+                <p>An online app for the best books</p>
+                <p>Tools: HTML, CSS and Bootstrap</p>
+                <a
+                  href="https://gadsbookstore.netlify.app"
+                  target="_blank"
+                  class="btn"
+                  >View</a
+                >
+              </div>
+            </div>
+            <!-- project6 -->
+            <div class="grid-item">
+              <img src="/img/pizza.png" alt="project" class="myimga" />
+              <div>
+                <b>FoodRes</b>
+
+                <p>An online store for the best pizza</p>
+                <p>Tools: HTML and CSS</p>
+
+                <a
+                  href="https://pizza-sites.netlify.app"
+                  target="_blank"
+                  class="btn"
+                  >View</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- portfolio ends -->
+        <!-- Contact starts -->
+        <div class="contact" id="contact">
+          <h2
+            class="headertext"
+            style="text-align: center; padding-bottom: 30px"
+          >
+            Contact
+          </h2>
+          <div class="gridsect">
+            <div class="form">
+              <!--  -->
+              <h3>Send me a message</h3>
+              <form action="" name="contact" method="POST" data-netlify="true">
+                <div class="inputs">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    name="username"
+                    id="username"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    name="email"
+                    id="email"
+                  />
+                </div>
+
+                <div class="inputs">
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+                <input
+                  type="submit"
+                  value="SEND"
+                  name="submit"
+                  class="btn btn1"
+                  id="submit"
+                />
+              </form>
+            </div>
+            <div class="contactdet">
+              <div class="icons">
+                <h3>Contact Me</h3>
+                <!-- phone -->
+                <div>
+                  <span>
+                    <img src="/img/phone.svg" alt="phone" class="icon" />
+                    08145886980</span
+                  >
+                </div>
+                <!-- email -->
+                <div>
+                  <span
+                    ><img
+                      src="/img/mail.svg"
+                      alt="mail"
+                      class="icon"
+                    />glorytefe@gmail.com</span
+                  >
+                </div>
+              </div>
+              <div class="icons">
+                <div class="small">
+                  <h3>Social links</h3>
+                  <!-- socials -->
+                  <div>
+                    <a
+                      href="https://www.instagram.com/glorytefe/"
+                      target="_blank"
+                    >
+                      <img src="/img/insta.svg" alt="insta" class="icon" />
+                      <span>Glorytefe</span></a
+                    >
+                  </div>
+                  <div>
+                    <a href="https://twitter.com/TefeGlory" target="_blank">
+                      <img src="/img/twitter.svg" alt="twitter" class="icon" />
+                      <span>@TefeGlory</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contactdet"></div>
+          </div>
+        </div>
+        <!-- contact ends here -->
+        <!-- footer -->
+        <footer>
+          <h3>Tefe &copy; 2021</h3>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>
+<!-- i use htm;, blal effectively -->
