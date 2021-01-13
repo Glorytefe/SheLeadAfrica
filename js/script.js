@@ -1,6 +1,8 @@
-
+let nav = document.getElementById('navs')
 let lis = document.getElementById('uls');
 let checkbx = document.getElementById("checkbx")
+
+
 
 lis.addEventListener('click', ()=>{
      if (checkbx.checked = true && nav.style.display == "block" ){
