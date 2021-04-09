@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap");
+:root {
+  --paddingsect: 45px;
+  --pad1: 30px;
+  --pad2: 10px;
+  --navcolor: rgba(247, 247, 247, 0.98);
+  --ftcolor: rgb(17, 20, 1);
+  --bannerbk: rgba(247, 245, 245, 0.7);
+  --shadow: 1px 2px 3px 4px rgba(199, 201, 170, 0.99);
+  --btncol: linear-gradient(to right, pink, #cec894);
+  --ft1col: rgb(194, 184, 92);
+  --ftcol2: white;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  letter-spacing: 1px;
+  font-family: "Yeon Sung", cursive;
+  line-height: 30px;
+}
+a {
+  text-decoration: none;
+  color: rgb(14, 13, 13);
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+p {
+  font-size: 18px;
+  padding-top: var(--pad2);
+}
+.headertext {
+  font-size: 30px;
+  opacity: 0.5;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+/* navbar starts here */
+header {
+  position: fixed;
+  padding: 1em var(--paddingsect);
+  background: var(--navcolor);
+  width: 100%;
+  z-index: 999;
+  /* color: white; */
+}
+nav {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  padding: 1em var(--paddingsect);
+  display: none;
+  background: var(--navcolor);
+  border-top: 1px solid black;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  padding: var(--pad2) 0;
+}
+
+nav ul li a:hover {
+  color: var(--ftcol2);
+}
+.spanbrand {
+  font-size: 2em;
+}
+.checkbx {
+  display: none;
+}
+.togglebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.togglebar span,
+.togglebar span::after,
+.togglebar span::before {
+  background-color: rgb(117, 117, 117);
+  width: 15px;
+  height: 2px;
+  position: relative;
+  display: block;
+}
+.togglebar span::after,
+.togglebar span::before {
+  content: "";
+  position: absolute;
+}
+.togglebar span::before {
+  bottom: 5px;
+}
+.togglebar span::after {
+  top: 5px;
+}
+.checkbx:checked ~ nav {
+  display: block;
+}
+
+/* nav ends here */
+/* content starts here */
+/* home starts */
+.home {
+  display: grid;
+  place-items: center;
+  padding-top: var(--paddingsect);
+  background-image: url("/img/pexels-cottonbro-4065864.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: var(--paddingsect);
+}
+.col {
+  background: var(--bannerbk);
+  width: 95%;
+  padding: var(--paddingsect) 20px;
+  transition: ease-in, 1000ms;
+}
+
+.col h2 {
+  color: var(--ftcolor);
+  padding-bottom: var(--pad1);
+  text-align: center;
+}
+.bord {
+  border: 2px solid var(--ft1col);
+  padding: var(--pad2) 20px;
+}
+
+/* ends here */
+
+/* about starts here */
+.about {
+  padding: var(--paddingsect);
+  text-align: center;
+  width: 600px;
+  max-width: 100%;
+  margin: auto;
+}
+.grn {
+  color: var(--ft1col);
+}
+.myimg {
+  width: 50%;
+  box-shadow: 1px 2px 3px 4px rgba(199, 201, 170, 0.99);
+  border-radius: 28px 0;
+  margin: var(--pad1);
+  transition: ease-in, 1000ms;
+}
+/* hovers */
+.myimg:hover,
+.myimga:hover,
+.icons a:hover,
+.col:hover {
+  transform: scale(1.05);
+  transition: ease-in, 1000ms;
+  box-shadow: var(--shadow);
+}
+/* abt ends here */
+/* portfolio starts */
+.portfolio {
+  padding: var(--paddingsect);
+  background-image: url("/img/pexels-cottonbro-4065864.jpg");
+  /* background-color: rgba(27, 22, 37,0.8); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+.grid-cont {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: var(--paddingsect);
+}
+.myimga {
+  height: 250px;
+  width: 100%;
+  border-radius: 15px;
+  transition: ease-in, 1000ms;
+}
+.grid-item {
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  background-color: var(--ftcol2);
+
+}
+.grid-item div {
+  padding: 20px 0;
+  text-align: center;
+  width: 400px;
+  max-width: 100%;
+  margin: auto;
+}
+.grid-item div p {
+  padding-bottom: var(--pad1);
+}
+.btn {
+  text-align: center;
+  background-image: var(--btncol);
+  padding: var(--pad2);
+  border-radius: 5px;
+  transition: ease-in, 1000ms;
+}
+.btn:hover {
+  background-image: none;
+  box-shadow: var(--shadow);
+}
+/* portfolio ends */
+
+/* contact starts */
+.contact {
+  padding: 40px 5px;
+}
+
+.gridsect {
+  padding: var(--paddingsect);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-gap: var(--pad2);
+  box-shadow: var(--shadow);
+}
+
+.inputs input,
+.inputs textarea {
+  width: 100%;
+  margin: var(--pad2) 0 0 0;
+  padding: var(--pad2) 15px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid var(--ft1col);
+}
+.inputs textarea {
+  height: 100px;
+}
+.contactdet {
+  width: 100%;
+  height: 70%;
+  margin: auto;
+}
+
+.icons div {
+  padding: var(--pad2);
+
+  /* padding: var(--pad2); */
+}
+.icon {
+  width: 1rem;
+  margin-right: var(--pad2);
+}
+
+.small {
+  padding-top: var(--pad1) !important;
+}
+.icons a,
+.icons span {
+  transition: ease-in, 1000ms;
+  display: flex;
+  padding-top: var(--pad2) 0;
+  color: rgb(14, 13, 13);
+  letter-spacing: 1px;
+  font-weight: bolder;
+}
+.icons h3,
+.form h3 {
+  color: var(--ft1col);
+}
+.btn1 {
+  margin-top: var(--pad2);
+  border-radius: 5px 0;
+  font-size: 1rem;
+  font-weight: bolder;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+/* contact ends */
+/* footer */
+footer {
+  background-color: var(--navcolor);
+  text-align: center;
+  padding: var(--pad2);
+}
+/* media query */
+@media screen and (min-width: 850px) {
+  .togglebar {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    padding: 0 var(--paddingsect);
+  }
+  header {
+    display: grid;
+    grid-template-columns: auto auto minmax(600px, 3fr) auto;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    top: initial;
+    left: initial;
+    padding: 0;
+    border: none;
+    background: none;
+    grid-column: 3/4;
+  }
+  .contactdet {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+  }
+  .icons {
+    flex-grow: 1;
+    padding: var(--pad1);
+  }
+  .small {
+    padding-top: 0 !important;
+  }
+  .gridsect {
+    width: 1000px;
+    max-width: 100%;
+    margin: auto;
+  }
+  .grid-cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: var(--paddingsect);
+  }
+}
