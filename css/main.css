@@ -67,7 +67,7 @@ nav ul li {
 }
 
 nav ul li a:hover {
-  color: var(--ftcol2);
+  color: var(--ft1col);
 }
 .spanbrand {
   font-size: 2em;
@@ -123,17 +123,23 @@ nav ul li a:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
-  padding: var(--paddingsect);
+  padding: var(--pad2);
+  
 }
+
 .col {
-  background: var(--bannerbk);
-  width: 95%;
-  padding: var(--paddingsect) 20px;
+  background-color: rgba(12, 12, 12, 0.3);
+  /* background: var(--bannerbk); */
+  width: 100%;
+  padding: var(--paddingsect) 8px;
   transition: ease-in, 1000ms;
 }
 
 .col h2 {
-  color: var(--ftcolor);
+  color: var(--ftcol2);
+  font-size: 22px;
+  letter-spacing: 2px;
+    /* color: var(--ftcolor); */
   padding-bottom: var(--pad1);
   text-align: center;
 }
@@ -146,11 +152,13 @@ nav ul li a:hover {
 
 /* about starts here */
 .about {
-  padding: var(--paddingsect);
+  padding: var(--pad1);
   text-align: center;
   width: 600px;
   max-width: 100%;
   margin: auto;
+  line-height: 40px;
+
 }
 .grn {
   color: var(--ft1col);
@@ -159,7 +167,7 @@ nav ul li a:hover {
   width: 50%;
   box-shadow: 1px 2px 3px 4px rgba(199, 201, 170, 0.99);
   border-radius: 28px 0;
-  margin: var(--pad1);
+  margin: var(--pad1) 0;
   transition: ease-in, 1000ms;
 }
 /* hovers */
@@ -169,12 +177,12 @@ nav ul li a:hover {
 .col:hover {
   transform: scale(1.05);
   transition: ease-in, 1000ms;
-  box-shadow: var(--shadow);
+  /* box-shadow: var(--shadow); */
 }
 /* abt ends here */
 /* portfolio starts */
 .portfolio {
-  padding: var(--paddingsect);
+  padding: var(--pad1);
   background-image: url("/img/pexels-cottonbro-4065864.jpg");
   /* background-color: rgba(27, 22, 37,0.8); */
   background-position: center;
@@ -189,7 +197,7 @@ nav ul li a:hover {
   grid-gap: var(--paddingsect);
 }
 .myimga {
-  height: 250px;
+  height: 150px;
   width: 100%;
   border-radius: 15px;
   transition: ease-in, 1000ms;
@@ -199,17 +207,16 @@ nav ul li a:hover {
   box-shadow: var(--shadow);
   background-color: var(--ftcol2);
 
+
 }
 .grid-item div {
-  padding: 20px 0;
+  padding: 5px 5px 20px 5px;
   text-align: center;
   width: 400px;
   max-width: 100%;
   margin: auto;
 }
-.grid-item div p {
-  padding-bottom: var(--pad1);
-}
+
 .btn {
   text-align: center;
   background-image: var(--btncol);
@@ -232,7 +239,6 @@ nav ul li a:hover {
   padding: var(--paddingsect);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-  grid-gap: var(--pad2);
   box-shadow: var(--shadow);
 }
 
@@ -248,17 +254,11 @@ nav ul li a:hover {
 .inputs textarea {
   height: 100px;
 }
-.contactdet {
-  width: 100%;
-  height: 70%;
-  margin: auto;
+
+.icons{
+  padding:10px 0 0 20px;
 }
 
-.icons div {
-  padding: var(--pad2);
-
-  /* padding: var(--pad2); */
-}
 .icon {
   width: 1rem;
   margin-right: var(--pad2);
@@ -270,7 +270,7 @@ nav ul li a:hover {
 .icons a,
 .icons span {
   transition: ease-in, 1000ms;
-  display: flex;
+  /* display: flex; */
   padding-top: var(--pad2) 0;
   color: rgb(14, 13, 13);
   letter-spacing: 1px;
@@ -279,6 +279,7 @@ nav ul li a:hover {
 .icons h3,
 .form h3 {
   color: var(--ft1col);
+  padding-top: 10px;
 }
 .btn1 {
   margin-top: var(--pad2);
@@ -323,13 +324,20 @@ footer {
     background: none;
     grid-column: 3/4;
   }
+  .col{
+  width: 70%;
+
+  }
+  .col h2{
+    font-size: 40px;
+    line-height: 50px;
+  }
   .contactdet {
     display: flex;
     flex-wrap: nowrap;
     margin: auto;
   }
   .icons {
-    flex-grow: 1;
     padding: var(--pad1);
   }
   .small {
@@ -344,5 +352,14 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: var(--paddingsect);
+  }
+  .portfolio{
+    padding:var(--paddingsect);
+  }
+  .myimga{
+    height: 200px;
+  }
+  .sta{
+    height: 160px;
   }
 }
